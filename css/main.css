@@ -1,0 +1,111 @@
+/* 設定字體與字寬 */
+body {
+	  font-family: "Arial", "sans-serif";
+	  font-weight: 400
+}
+
+/* 標題置中 */
+h1, h2 {
+    text-align: center;
+}
+
+
+
+
+nav ul {
+  /* 選單黑底  */
+  background-color: black;
+  /* 消除兩邊空白 */
+  margin-left: -40px; 
+  margin-right: -40px; 
+  /* 文字置中 */
+  text-align: center;
+  font-size: 18px;
+}
+nav ul li {
+  /* li橫排列 */
+  display: inline-block;
+  /* 去標頭 */
+  list-style-type: none;
+  padding: 5px 10px;
+  margin-right:10px;
+}
+nav ul li a {
+  color: white;
+}
+
+/*
+nav ul li a {
+  padding: 15px 10px;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.2em;
+  color: #B2BABB;
+}
+nav ul {
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+}
+
+*/
+
+p {
+  text-align: center;
+}
+
+
+.contact {
+    text-align: center;
+}
+.contact a {
+    color: gray;
+}
+.contact div {
+  padding-bottom: 30px;
+}
+
+
+
+footer {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1px;
+    background-color: #efefef;
+    text-align: center;
+    margin-left: -40px; 
+    margin-right: -40px; 
+    margin-bottom: -40px; 
+    margin-top: 40px; 
+
+}
+/* 調整圖片大小 */
+footer img {
+    height: 30px;
+    width: 30px;  
+}
+footer ul li {
+    display: inline-block;
+    margin-right:18px;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
