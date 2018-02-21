@@ -55,18 +55,18 @@ nav ul li a {
 */
 
 p {
-  text-align: center;
-}
-
-
-.contact {
     text-align: center;
 }
-.contact a {
+
+
+#contact {
+    text-align: center;
+}
+#contact a {
     color: gray;
 }
-.contact div {
-  padding-bottom: 30px;
+#contact div {
+    padding-bottom: 30px;
 }
 
 
