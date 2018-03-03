@@ -1,6 +1,7 @@
 /* 設定字體與字寬 */
 body {
-	  font-family: "Arial", "sans-serif";
+	  /*font-family: "Arial", "sans-serif";*/
+    font-family: "PT Sans", Helvetica, Arial, sans-serif;
 	  font-weight: 400
 }
 
