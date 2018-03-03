@@ -109,9 +109,12 @@ footer img {
     height: 1.6rem;
     width: 1.6rem;  
 }
+footer ul {
+    margin-right: 1.4rem; 
+}
 footer ul li {
     display: inline-block;
     /*margin-right:18px;*/
-    margin-right: 1.1rem;
+    margin-right: 1.1rem; 
 }
 
