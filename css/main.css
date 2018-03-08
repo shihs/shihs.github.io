@@ -30,14 +30,14 @@ header h1 {
 
 }
 .headshot {
-  /*display: inline-block;*/
-  /*width: 150px;
-  height: 150px;*/
   width: 7.8rem;
   height: 7.8rem;
   border-radius: 50%;
   margin-top: 0.5%; 
-  margin-bottom: 0.5%; 
+  margin-bottom: 0.5%;
+ /* border-style: double;
+  border-color: #efefef;
+  border-width: thin;*/
 }
 
 nav ul {
@@ -80,7 +80,7 @@ div p {
   margin-bottom: 0.5%; 
 }
 
-#contact a {
+.contact a {
     color: gray;
 }
 .far {
