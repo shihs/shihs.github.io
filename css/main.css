@@ -16,6 +16,8 @@ body {
 	  font-weight: 400;
     /* 文字置中 */
     text-align: center;
+    margin-left:auto;
+    margin-right:auto;
     
 }
 
@@ -27,7 +29,6 @@ header h1 {
   font-size: 2.3rem;
   margin-top: 2%; 
   margin-bottom: 2.2%; 
-
 }
 .headshot {
   width: 7.8rem;
@@ -35,18 +36,12 @@ header h1 {
   border-radius: 50%;
   margin-top: 0.5%; 
   margin-bottom: 0.5%;
- /* border-style: double;
-  border-color: #efefef;
-  border-width: thin;*/
 }
+
 
 nav ul {
   /* 選單黑底  */
   background-color: black;
-  /* 消除兩邊空白 */
-  margin-left: -1%; 
-  margin-right: -1%; 
-  /*font-size: 18px;*/
   font-size: .95rem;
   
 }
@@ -55,8 +50,6 @@ nav ul li {
   display: inline-block;
   /* 去標頭 */
   list-style-type: none;
- /* padding: 5px 10px;
-  margin-right:10px;*/
   padding: .3rem .6rem;
   margin-right: .5rem;
 }
