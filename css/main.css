@@ -19,6 +19,7 @@ body {
   margin-right:auto;*/
   width: 100%;
   margin: auto;
+  height: 100%;
 }
 
 
@@ -43,22 +44,35 @@ nav {
   background-color: black;
   /*font-size: .95rem;*/
 }
-nav ul li {
-  /* li橫排列 */
-  display: inline-block;
-  /* 去標頭 */
-  /*list-style-type: none;*/
-  padding: .4rem .8rem;
-  /*margin-right: .5rem;*/
+@media (min-width: 768px) {
+  nav ul li {
+    /* li橫排列 */
+    display: inline-block;
+    /* 去標頭 */
+    /*list-style-type: none;*/
+    padding: .4rem .8rem;
+    /*margin-right: .5rem;*/
+  }
 }
+@media (max-width: 768px) {
+  nav ul {
+   margin: auto;
+   margin-right: 1.8rem; 
+  }
+  nav ul li {
+    /* 去標頭 */
+    list-style: none;
+    padding: .2rem;
+  }
+}
+
 nav ul li a {
-  color: white;
-  padding: .4rem;
-  text-decoration:none;
-}
-nav ul li a:hover {
-  text-decoration:underline;
-}
+    color: white;
+    text-decoration:none;
+  }
+  nav ul li a:hover {
+    text-decoration:underline;
+  }
 
 
 h2 {
@@ -79,6 +93,9 @@ div p {
   margin-bottom: 0.5%; 
 }
 
+.contact {
+  padding-bottom: 2rem;
+}
 .contact a {
   color: #757A7A;
   text-decoration:none;
