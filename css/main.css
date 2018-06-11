@@ -11,21 +11,20 @@
 
 /* 設定字體與字寬 */
 body {
-    font-family: "PT Sans", Helvetica, Arial, sans-serif;
-	  font-weight: 400;
-    /* 文字置中 */
-    text-align: center;
-/*    margin-left:auto;
-    margin-right:auto;*/
-    width: 100%;
-    margin: auto;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+	font-weight: 400;
+  /* 文字置中 */
+  text-align: center;
+  /* margin-left:auto;
+  margin-right:auto;*/
+  width: 100%;
+  margin: auto;
 }
 
 
 
 header h1 {
   font-family: "Abril Fatface", serif;
-  /*font-size: 45px;*/
   font-size: 2.3rem;
   margin-top: 2%; 
   margin-bottom: 2.2%; 
@@ -42,26 +41,23 @@ header h1 {
 nav {
   /* 選單黑底  */
   background-color: black;
-  font-size: .95rem;
+  /*font-size: .95rem;*/
 }
 nav ul li {
   /* li橫排列 */
   display: inline-block;
   /* 去標頭 */
   /*list-style-type: none;*/
-  padding: .3rem .7rem;
+  padding: .4rem .8rem;
   /*margin-right: .5rem;*/
 }
 nav ul li a {
   color: white;
   padding: .4rem;
-  /*text-decoration:none;*/
+  text-decoration:none;
 }
 nav ul li a:hover {
-/*  color: black;
-  background-color: white;*/
-  font-weight:bold;
-/*  text-decoration:none;*/
+  text-decoration:underline;
 }
 
 
@@ -84,7 +80,11 @@ div p {
 }
 
 .contact a {
-    color: gray;
+  color: #757A7A;
+  text-decoration:none;
+}
+.contact a:hover {
+  text-decoration:underline;
 }
 .far {
     vertical-align: middle;
@@ -114,5 +114,6 @@ footer ul li {
     display: inline-block;
     /*margin-right:18px;*/
     margin-right: 1.1rem; 
+    padding: .1rem .6rem;
 }
 
