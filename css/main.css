@@ -94,7 +94,7 @@ div p {
 }
 
 .contact {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 .contact a {
   color: #757A7A;
@@ -104,33 +104,47 @@ div p {
   text-decoration:underline;
 }
 .far {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
+/* 調整圖片大小 */
+.last img {
+  height: 1.6rem;
+  width: 1.6rem;  
+  opacity: 0.77;
+}
+.last ul {
+  margin-right: 1.4rem; 
+}
+/*.last p, ul {
+  display: inline-block;
+}*/
+.last ul li {
+  display: inline-block;
+  margin-right: 1.1rem; 
+  padding: .1rem .3rem;
+}
+.last img:hover {
+  height: 2.1rem;
+  width: 2.1rem; 
+/*  opacity: 1;*/
+}
+.last {
+  padding-bottom: 2rem;
+}
 
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background-color: #efefef;
-
+  position: fixed;
+  left: 0;
+  bottom: 0px;
+  height: 8%;
+  width: 100%;
+  /*background-color: #efefef;*/
+  background-color: #2E2E2E;
 }
-/* 調整圖片大小 */
-footer img {
-    /*height: 30px;
-    width: 30px;  */
-    height: 1.6rem;
-    width: 1.6rem;  
-}
-footer ul {
-    margin-right: 1.4rem; 
-}
-footer ul li {
-    display: inline-block;
-    /*margin-right:18px;*/
-    margin-right: 1.1rem; 
-    padding: .1rem .6rem;
+footer p {
+  margin-top:1rem;
+  font-size:0.6rem;
+  color:white;
 }
 
