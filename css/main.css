@@ -125,8 +125,10 @@ div p {
   padding: .1rem .3rem;
 }
 .last img:hover {
-  height: 2.1rem;
-  width: 2.1rem; 
+  /*height: 2.1rem;
+  width: 2.1rem; */
+  height: 1.6rem;
+  width: 1.6rem;  
   opacity: 1;
 }
 .last {
