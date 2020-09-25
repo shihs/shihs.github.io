@@ -1,151 +1,427 @@
-@media (min-width: 48em) {
-  html {
-    font-size: 16px;
-  }
-}
-@media (min-width: 58em) {
-  html {
-    font-size: 20px;
-  }
+
+/* Base Styles -------------------- */
+
+* {
+  box-sizing: border-box;
 }
 
-/* 設定字體與字寬 */
 body {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
-	font-weight: 400;
-  /* 文字置中 */
-  text-align: center;
-  /* margin-left:auto;
-  margin-right:auto;*/
-  width: 100%;
+  font: 1em/1.5 'Josefin Sans', sans-serif;/*"PT Sans", Helvetica, Arial, sans-serif;*/
+  text-align: center; /* 文字置中 */
   margin: auto;
-  height: 100%;
+  line-height: 24px;
+  /*background-color: rgba(181, 189, 137, 0.1);*/
 }
 
-
-
-header h1 {
-  font-family: "Abril Fatface", serif;
-  font-size: 2.3rem;
-  margin-top: 2%; 
-  margin-bottom: 2.2%; 
-}
-.headshot {
-  width: 7.8rem;
-  height: 7.8rem;
-  border-radius: 50%;
-  margin-top: 0.5%; 
-  margin-bottom: 0.5%;
+header {
+  position: sticky;
+  top: 0;
+  display: inline-block;
+  width: 100%;
+  background-color: white;
+  z-index: 997;
 }
 
+header.header-scrolled {
+  transition: all .5s;
+  box-shadow: -21.213px 21.213px 30px 0 rgba(158, 158, 158, .3);
+}
+
+main {
+  margin-top:-6px;
+}
+
+h1 {
+  font-size: 3.4375rem; /* 55px/16px  */
+  line-height: 1.1; /*行距*/
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 2.625rem; /* 42px/16px  */
+  line-height: 1;
+  /*margin-top:0px;*/
+}
+
+h4 {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+h1, h2, h4 {
+  color: #40424a;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.odd {
+  /*background-color: rgba(50, 115, 220, 0.1);*/
+  background-color: rgba(114, 158, 161, 0.1);
+}
+
+.even {
+  background-color: rgba(181, 189, 137, 0.1);
+}
+
+/* Navigator --------------------- */
 
 nav {
-  /* 選單黑底  */
-  background-color: #2E2E2E;
-  /*font-size: .95rem;*/
+  float: right;
+  margin-right: 2rem;
 }
-@media (min-width: 768px) {
-  nav ul li {
-    /* li橫排列 */
-    display: inline-block;
-    /* 去標頭 */
-    /*list-style-type: none;*/
-    padding: .4rem .8rem;
-    /*margin-right: .5rem;*/
-  }
-}
-@media (max-width: 768px) {
-  nav ul {
-   margin: auto;
-   margin-right: 1.8rem; 
-  }
-  nav ul li {
-    /* 去標頭 */
-    list-style: none;
-    padding: .2rem;
-  }
+
+nav ul li {
+  display: inline-block;
+  padding: .1rem .9rem;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration:none;
-  }
-  nav ul li a:hover {
-    text-decoration:underline;
-  }
-
-
-h2 {
-  margin-bottom: 0.5%; 
-  font-size: 1.3rem;
+  color: #40424a;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 680;
 }
 
-section {
-  margin-top: 2.6%;
-  margin-bottom: 6%;
-  font-size: .9rem;
-}
-.last {
-  margin-bottom: 0.1%;
-}
-div p {
-  margin-top: 0.5%;
-  margin-bottom: 0.5%; 
+nav ul li a:hover {
+  text-decoration: underline;
+  color: rgba(64, 66, 74, 0.7);
 }
 
-.contact {
-  padding-bottom: 1rem;
-}
-.contact a {
-  color: #757A7A;
-  text-decoration:none;
-}
-.contact a:hover {
-  text-decoration:underline;
-}
-.far {
-  vertical-align: middle;
+/* Home -------------------- */
+
+/* social links */
+.social-links {
+  margin-top: 130px;
 }
 
-/* 調整圖片大小 */
-.last img {
-  height: 1.6rem;
-  width: 1.6rem;  
-  opacity: 0.77;
+.social-links img {
+  height: 2rem;
+  width: 2rem;  
+  opacity: 0.4; /* 透明度 */
 }
-.last ul {
-  margin-right: 1.4rem; 
-}
-/*.last p, ul {
-  display: inline-block;
-}*/
-.last ul li {
+
+.social-links ul li {
   display: inline-block;
  /* margin-right: 1.1rem; */
-  padding: .1rem .3rem;
-}
-.last img:hover {
-  /*height: 2.1rem;
-  width: 2.1rem; */
-  height: 1.6rem;
-  width: 1.6rem;  
-  opacity: 1;
-}
-.last {
-  padding-bottom: 2rem;
+  padding: .3rem .6rem;
 }
 
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0px;
-  height: 8%;
-  width: 100%;
-  background-color: #2E2E2E;
+.social-links img:hover {
+  opacity: 0.7;
 }
-footer p {
-  margin-top:1rem;
-  font-size:0.6rem;
-  color:white;
+
+.name {
+  margin-bottom: 0;
+}
+
+.surname {
+  margin-top: 0;
+}
+
+.content {
+  width: 75%;
+  /*height: 530px;*/
+  height: 100%;
+  margin: auto;
+  padding-top: 45px;
+  padding-bottom: 50px;
+}
+
+.group {
+  /*height: 650px;*/
+  padding-top: 80px;
+}
+
+.profile {
+  max-width: 100%;
+  border: solid 5px rgba(64, 66, 74, 0.85);
+  padding: 10px;
+}
+
+.profile-box,
+.intro-box {
+  width: 45.5%;
+}
+
+.profile-box { 
+  float: left;
+  padding-top: 20px;
+}
+
+.intro-box {
+  float: right;
+  text-align: left;
+  padding-top: 10px;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* About -------------------- */
+
+
+.profile-2 {
+  max-width: 80%;
+  /*height: 200px;*/
+  border: solid 5px rgba(64, 66, 74, 0.85);
+  padding: 10px;
+}
+
+.profile-box-2,
+.about-content {
+  width: 45.5%;
+}
+
+.profile-box-2 { 
+  float: right;
+  /*padding-top: 20px;*/
+}
+
+.about-content {
+  float: left;
+  text-align: left;
+  margin-left: 40px;
+  /*padding-top: 10px;*/
+}
+
+.about-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.about-content p {
+  margin-left: 25px;
+}
+
+.qulification ul li {
+  list-style-position: inside;
+}
+
+
+/* Resume -------------------- */
+
+.resume-title {
+  text-align: left;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  /*position: relative;*/
+}
+
+.resume-title:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #777777;
+  display: inline-block;
+}
+
+.resume-content {
+  margin: auto;
+}
+
+.first-resume-content {
+  margin-bottom: 80px;
+}
+
+ul.resume-detail li {
+  position: relative;
+  margin: auto;
+  margin-bottom: 50px;
+  background-color: #fbfbfb;
+  padding: 20px;
+  list-style: none;
+  text-align: left;
+  width: 80%;
+}
+
+ul.resume-detail li > span {
+  width: 2px;
+  height: 100%;
+  background: #777777;
+  left: -30px;
+  top: 0;
+  position: absolute;
+}
+
+ul.resume-detail li > span:before,
+ul.resume-detail li > span:after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  border: 2px solid #777777;
+  position: absolute;
+  left: -5px;
+  top: -10px;
+}
+
+ul.resume-detail li span:after {
+  top: 100%;
+}
+
+span.number span {
+  position: absolute;
+  left: -45px;
+  font-weight: 600;
+  color: #777777;
+  font-size: 0.9rem;
+}
+
+span.number span:first-child {
+  top: -16px;
+}
+
+span.number span:last-child {
+  top: 94%;
+}
+
+.lead {
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.type {
+  font-weight: 600;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.info {
+  color: #777;
+  font-size: 14px;
+}
+
+.info p {
+  margin-top: 2px;
+  margin-bottom: 0px;
+}
+
+.info ul {
+  padding-left: 30px;
+}
+
+.info ul li {
+  position: relative;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: initial;/*inherit;*/
+  text-align: left;
+  width: 100%;
+}
+
+.skills-left,
+.skills-right {
+  width: 46.5%;
+}
+
+.skills-left {
+  float: left;
+}
+
+.skills-right {
+  float: right;
+}
+
+.skills span {
+  font-weight: 600; 
+}
+
+.skills {
+  text-align: left;
+}
+
+.skills-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ul.skills {
+  position: relative;
+  margin: auto;
+  /*margin-left: 30px;*/
+  margin-bottom: 50px;
+  background-color: #fbfbfb;
+  padding: 20px 20px 20px 50px;
+  /*text-align: left;*/
+  width: 80%;
+}
+
+
+/* Contact -------------------- */
+
+.contact a {
+  text-decoration: none;
+  color: #777777;
+}
+
+.contact-form input {
+  background-color: transparent;
+  padding-left: 25px;
+  height: 50px;
+  width: 70%;
+  border: none;
+  border-bottom: 2px solid #cacaca;
+  margin-bottom: 30px;
+  font-size: 13px;
+  font-family: inherit;
+}
+
+.contact-form textarea {
+  padding-left: 25px;
+  height: 130px;
+  width: 70%;
+  border: none;
+  border-bottom: 2px solid #cacaca;
+  margin-bottom: 30px;
+  font-size: 13px;
+  background-color: transparent;
+  font-family: inherit;
+  resize: none;
+}
+
+.site-btn {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 12px;
+  min-width: 213px;
+  min-height: 20px;
+  text-align: center;
+  padding: 20px 10px 15px;
+  position: relative;
+  background-color: #fff;
+  margin-right: 10px;
+  border: 2px solid #40424a;
+  color: #40424a;
+  font-weight: 700;
+  font-family: inherit;
+}
+
+.far {
+  color: #40424a;
+}
+
+
+/* Copy right -------------------- */
+
+.footer {
+  font-size: 10px;
+  font-weight: 600;
+  color: #40424a;
 }
 
