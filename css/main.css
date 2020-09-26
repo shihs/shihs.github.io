@@ -528,18 +528,18 @@ ul.skills {
   .contact-form input {
     padding-left: 20px;
     height: 30px;
-    width: 82%;
+    width: 84%;
     border: none;
     border-bottom: 1px solid #cacaca;
     margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 12px;
     font-family: inherit;
   }
   
   .contact-form textarea {
     padding-left: 20px;
     height: 80px;
-    width: 82%;
+    width: 84%;
     border: none;
     border-bottom: 1px solid #cacaca;
     margin-bottom: 20px;
