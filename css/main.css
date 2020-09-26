@@ -461,7 +461,6 @@ ul.skills {
     margin-left: 20px;
     margin-bottom: 30px;
     padding: 13px 13px 13px 30px; 
-    /*text-align: left;*/
   }
 }
 
@@ -482,11 +481,12 @@ ul.skills {
   }
   
   .type {
-    font-size: 10px;
+    font-size: 12px;
   }
   
   .info {
-    font-size: 8px;
+    font-size: 12px;
+    line-height: 18px;
   }
 
   .profile-box,
@@ -532,7 +532,7 @@ ul.skills {
     border: none;
     border-bottom: 1px solid #cacaca;
     margin-bottom: 20px;
-    font-size: 8px;
+    font-size: 14px;
     font-family: inherit;
   }
   
@@ -543,11 +543,11 @@ ul.skills {
     border: none;
     border-bottom: 1px solid #cacaca;
     margin-bottom: 20px;
-    font-size: 8px;
+    font-size: 12px;
   }
 
   .site-btn {
-    font-size: 8px;
+    font-size: 12px;
     padding: 15px 8px 13px;
   }
 
