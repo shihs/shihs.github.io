@@ -451,6 +451,15 @@ ul.skills {
 
 @media (max-width: 685px) {
 
+  nav ul li {
+    display: block;
+    padding-top: .45em;
+  }
+
+  nav {
+    float: none;
+  }
+
   h1 {
     line-height: 1; /*行距*/
   }
