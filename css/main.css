@@ -9,7 +9,7 @@ body {
   font: 1em/1.5 'Josefin Sans', sans-serif;/*"PT Sans", Helvetica, Arial, sans-serif;*/
   text-align: center; /* 文字置中 */
   margin: auto;
-  line-height: 24px;
+  /*line-height: 24px;*/
   /*background-color: rgba(181, 189, 137, 0.1);*/
 }
 
@@ -23,11 +23,12 @@ header {
 }
 
 header.header-scrolled {
-  transition: all .5s;
+  /*transition: all .5s;*/
   box-shadow: -21.213px 21.213px 30px 0 rgba(158, 158, 158, .3);
 }
 
 main {
+  line-height: 24px;
   margin-top:-6px;
 }
 
