@@ -14,6 +14,7 @@ body {
 }
 
 header {
+  /* 固定在最上方 */
   position: sticky;
   top: 0;
   display: inline-block;
@@ -41,7 +42,6 @@ h1 {
 h2 {
   font-size: 2.625rem; /* 42px/16px  */
   line-height: 1;
-  /*margin-top:0px;*/
 }
 
 h4 {
@@ -59,7 +59,6 @@ h1, h2, h4 {
 }
 
 .odd {
-  /*background-color: rgba(50, 115, 220, 0.1);*/
   background-color: rgba(114, 158, 161, 0.1);
 }
 
@@ -106,7 +105,6 @@ nav ul li a:hover {
 
 .social-links ul li {
   display: inline-block;
- /* margin-right: 1.1rem; */
   padding: .3rem .6rem;
 }
 
@@ -130,13 +128,13 @@ nav ul li a:hover {
   padding-bottom: 50px;
 }
 
-.group {
+#home {
   /*height: 650px;*/
   padding-top: 80px;
 }
 
 .profile {
-  max-width: 100%;
+  max-width: 90%;
   border: solid 5px rgba(64, 66, 74, 0.85);
   padding: 10px;
 }
@@ -157,18 +155,11 @@ nav ul li a:hover {
   padding-top: 10px;
 }
 
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 /* About -------------------- */
 
 
 .profile-2 {
   max-width: 78%;
-  /*height: 200px;*/
   border: solid 5px rgba(64, 66, 74, 0.85);
   padding: 10px;
 }
@@ -180,7 +171,6 @@ nav ul li a:hover {
 
 .profile-box-2 { 
   float: right;
-  /*padding-top: 20px;*/
 }
 
 .about-content {
@@ -188,12 +178,6 @@ nav ul li a:hover {
   text-align: left;
   margin-left: 40px;
   padding-top: 40px;
-}
-
-.about-group:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .about-content p {
@@ -216,6 +200,7 @@ nav ul li a:hover {
   /*position: relative;*/
 }
 
+/* the underline of resume title */
 .resume-title:before {
   content: "";
   position: absolute;
@@ -345,12 +330,6 @@ span.number span:last-child {
   text-align: left;
 }
 
-.skills-group:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 ul.skills {
   position: relative;
   margin: auto;
@@ -358,8 +337,13 @@ ul.skills {
   margin-bottom: 50px;
   background-color: #fbfbfb;
   padding: 20px 20px 20px 50px;
-  /*text-align: left;*/
   width: 80%;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 
@@ -415,7 +399,6 @@ ul.skills {
 .far {
   color: #40424a;
 }
-
 
 /* footer -------------------- */
 
