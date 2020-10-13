@@ -5,49 +5,50 @@
       <meta name="viewport" content="width=device-width">
       <meta charset="utf-8">
       <title>M.C. Shih</title>
+      
       <!-- css -->
-      <link rel="stylesheet" href="css/main.css">
-      <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+      <!-- <link rel="stylesheet" href="css/main.css"> -->
+      <link rel="stylesheet" href="css/style.css">
       <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700" rel="stylesheet">
   </head>
 
   <body>
     <header class="main-header">
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="https://shihs.github.io/blog/" class="blog" target="_blank">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>           
-      </nav>
+      <h1 class="welcome"><a href="#">Home</a></h1>
+      <ul class="main-nav">
+        <!-- <li><a href="#home">Home</a></li> -->
+        <li><a href="#about">About</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="https://shihs.github.io/blog/" class="blog" target="_blank">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </header>
 
     <main>
       <div class="odd">
         <div class="content group" id=home>
-          <div class="profile-box">
+          <div class="profile-box col">
               <img src="img/profile2.jpg" alt="Min-Chun Shih, Data Scientist" class="profile">
           </div>
-          <div class="intro-box">
-            <div class="intro">
-              <h4 class="text-uppercase">This is me<h4>
-              <h1 class="text-uppercase name">Min-Chun</h1>
-              <h1 class="text-uppercase surname">Shih</h1>
-              <h2>Data Scientist</h2>
+          <div class="intro-box col">
 
-              <div class="social-links">
-                <ul>
-                  <li><a href="https://github.com/shihs" class="github" target="_blank"><img src="img/github.png"></a></li>
-                  <li><a href="https://www.linkedin.com/in/min-chun-shih/" class="linkedin" target="_blank"><img src="img/linkedin.png"></a></li>
-                  <!-- <li><a href="https://www.flickr.com/people/mcshihs/" class="flickr" target="_blank"><img src="img/flickr.png"></a></li> -->
-                  <li><a href="https://www.instagram.com/itakefilmphotos_tw/" class="instagram" target="_blank"><img src="img/instagram.png"></a></li>
-                </ul>
-                </div>             
-            </div>
-          </div>
+            <div class="intro">
+              <h4 class="text-uppercase">This is me</h4>
+              <h1 class="text-uppercase firstname name">Min-Chun</h1>
+              <h1 class="text-uppercase surname name">Shih</h1>
+              <h2>Data Scientist</h2>
+            </div> <!--/.intro-->   
+
+            <ul class="social-links">
+              <li><a href="https://github.com/shihs" target="_blank"><img src="img/github.png"></a></li>
+              <li><a href="https://www.linkedin.com/in/min-chun-shih/" target="_blank"><img src="img/linkedin.png"></a></li>
+              <li><a href="https://codepen.io/shihs-taiwanese/pens/public" target="_blank"><img src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png"></a></li>
+              <!-- <li><a href="https://www.flickr.com/people/mcshihs/" target="_blank"><img src="img/flickr.png"></a></li> -->
+              <li><a href="https://www.instagram.com/itakefilmphotos_tw/" target="_blank"><img src="img/instagram.png"></a></li>
+            </ul>            
+            
+          </div> <!--/.intro-box-->   
         </div>
       </div>
 
@@ -56,11 +57,11 @@
           <h2 >About Me</h2> 
           
           <div class="group">
-            <div class="profile-box-2">
-                <img src="img/profile.jpg" alt="Min-Chun Shih, Data Scientist" class="profile-2">
+            <div class="profile-box-2 col">
+                <img src="img/profile.jpg" alt="Min-Chun Shih, Data Scientist" class="profile">
             </div>  
             
-            <div class="about-content">
+            <div class="about-content col">
               <p>Hello, I'm Min-Chun. I'm from Taiwan.</p>
               <div class="qualification">
                 <ul> 
@@ -118,12 +119,7 @@
                   <div class="lead">Research Assistant</div>
                   <div class="type">ACADEMIA SINICA, Taipei, Taiwan</div>
                   <div class="info">
-                    <p>Assisted research, crawled and collected data, cleaned data and built models.</p>
-                   <!--  <ul>
-                      <li>Analyzed game data within different cultural contexts.</li> 
-                      <li>Analyzed different countries’ lending preference on Kiva Microfounds, a loan platform allows people to lend money via the   internet.</li>
-                      <li>Heat wave adjustment analysis for electric usage and heat related disease.</li>
-                    </ul>  -->     
+                    <p>Assisted research, crawled and collected data, cleaned data and built models.</p>   
                   </div>
                 </div>
                 <span class="number"><span>2015</span> <span>2016</span></span>
@@ -134,12 +130,7 @@
                   <div class="lead">Data Analyst</div>
                   <div class="type">ULTRAHARD CO., LTD., Taipei, Taiwan</div>
                   <div class="info">
-                    <p>Analyzed products sales and marketing strategy.</p>
-                    <!-- <ul>
-                      <li>Collected competitors’ sales data from selling platform using Python.</li> 
-                      <li>Daily selling report output automatically.</li>
-                      <li>Product profitability analysis.</li>
-                    </ul>  -->            
+                    <p>Analyzed products sales and marketing strategy.</p>          
                   </div>
                 </div>
                 <span class="number"><span>2016</span> <span>2016</span></span>
@@ -150,13 +141,7 @@
                   <div class="lead">Data Analyst</div>
                   <div class="type">DHL EXPRESS TAIWAN, Taipei, Taiwan</div>
                   <div class="info">
-                    <p>Analyzed existing customers’ data to find lead source efficiently. Developed and created models to find potential clients and  increase cold calling conversion rate.</p>
-                    <!-- <ul>
-                      <li>Builded Taiwan business database using Python to crawl companies’ information from different websites.</li> 
-                      <li>Used Python to crawl lead source from internet.</li>
-                      <li>Builded models that can filter phone call lists and predict phone call results.</li>
-                      <li>Analyzed customer usage pattern for specific industries.</li>
-                    </ul>  -->            
+                    <p>Analyzed existing customers’ data to find lead source efficiently. Developed and created models to find potential clients and  increase cold calling conversion rate.</p>        
                   </div>
                 </div>
                 <span class="number"><span>2016</span> <span>2018</span></span>
@@ -168,10 +153,6 @@
                   <div class="type">DecodeChinese, Linköping, Sweden</div>
                   <div class="info">
                     <p>It was a project started from LiU Impact Factory in 2019. DecodeChinese aims to change the way people learn Chinese.</p>                  
-                   <!--  <ul>
-                      <li>Collected and combined data from multiple resources.</li> 
-                      <li>Designed and built SQL databese.</li>
-                    </ul>  -->
                   </div>  
                 </div>
                 <span class="number"><span>2019</span> <span>2020</span></span>
@@ -181,7 +162,7 @@
 
 
         <div class="group">
-          <div class="resume-content skills-left">
+          <div class="resume-content col">
             <h3 class="resume-title">My Technical skills</h3>
             <ul class="skills">
               <li>Web Crawling</li>
@@ -191,7 +172,7 @@
             </ul>
           </div>
 
-          <div class="resume-content skills-right">
+          <div class="resume-content col">
             <h3 class="resume-title">My Language skills</h3>
             <ul class="skills">
               <li><span>Mandarin:</span> Native speaker</li>
