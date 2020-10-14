@@ -167,6 +167,7 @@ h4 {
   margin-left: 10px;
   padding-bottom: 10px;
   position: relative;
+  font-size: 1.4em;
 }
 
 /* the underline of resume title */
@@ -271,7 +272,7 @@ span.number span:last-child {
 
 .skills {
   text-align: left;
-  font-size: 0.875em;
+  font-size: 1em;
 }
 
 ul.skills {
@@ -435,8 +436,22 @@ ul.skills {
 	}
 
 	.about-content {
-		padding-left: 100px;
+		padding-left: 70px;
+    font-size: 1.1em;
 	}
+
+  .lead {
+    font-size: 1.1em;
+  }
+
+  .type,
+  .info {
+    font-size: 1em;
+  }
+
+  span.number span {
+    font-size: 0.9rem;
+  }
 
 	main {
 		padding-top: 61.59px;
